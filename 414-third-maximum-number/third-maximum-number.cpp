@@ -7,13 +7,12 @@ public:
         {
              st.insert(num);
         }
-    
-        for(auto x:st)
+        auto it =st.rbegin();
+        if(st.size()<3)
         {
-              arr.push_back(x);
+              return *it; 
         }
-        if(arr.size()>=3)
-        return arr[arr.size()-3];
-        return arr[arr.size()-1];
+        advance(it , 2);
+        return *it;
     }
 };
