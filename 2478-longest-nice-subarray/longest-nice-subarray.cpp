@@ -14,7 +14,7 @@ public:
                 while((result&nums[right])!=0)
                 {
                     
-                     result ^= nums[left];
+                     result &= ~nums[left];
                      left++;
                 }
                  result=result | nums[right];
