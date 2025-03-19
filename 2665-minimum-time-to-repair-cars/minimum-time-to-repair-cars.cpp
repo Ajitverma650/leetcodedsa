@@ -21,7 +21,7 @@ public:
 
      long long  end=maxe*cars*cars;
      long long start=1;
-      long long  ans=-1;
+      long long  ans=0;
      while(start<=end)
      {
 
