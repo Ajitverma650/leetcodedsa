@@ -18,11 +18,11 @@ public:
                    int n2=num2[j]-'0';
 
                    res[i+j+1]+=n1*n2;
-                   int sum=res[i+j+1]/10;
-                   int carry=res[i+j+1]%10;
+                   int carry=res[i+j+1]/10;
+                   int sum=res[i+j+1]%10;
 
-                   res[i+j]+=sum;
-                   res[i+j+1]=carry;
+                   res[i+j]+=carry;
+                   res[i+j+1]=sum;
               }
           }
 
