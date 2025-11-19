@@ -22,9 +22,7 @@ public:
             solve(idx + 1, cookies, children, k);
 
             children[i] -= cookie;
-
-            // small pruning: if child has 0, don't assign same cookie to empty next child
-            if (children[i] == 0) break;
+            
         }
     }
 
